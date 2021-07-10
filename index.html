@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login System</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="sign.js"></script>
+</head>
+
+<body>
+    <div id="page_div" class="page-div">
+        <h1> Welcome</h1>
+        <input type="email" placeholder="email" id="email" />
+        <input type="password" placeholder="password" id="password" />
+        <button onclick="signUp()" id="signUp">Sign Up</button>
+        <br>
+        <button onclick="signIn()" id="signIn">Sign In</button>
+        <br>
+        <button onclick="signOut()" id="signOut">Sign Out</button>
+        <br>
+    </div>
+    
+    <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+      </div>
+
+</body>
+
+</html>
